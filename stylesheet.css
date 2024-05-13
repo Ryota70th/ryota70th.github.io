@@ -28,7 +28,9 @@ body {
 .header-logo {
     font-size:50px;
     float: left;
-    padding: 24px;
+    padding-left: 24px;
+    line-height: 120px;
+
 }
 
 .header-list {
@@ -68,4 +70,8 @@ li a:hover {
     color: blue;
     background-color: transparent;
     text-decoration: underline;
+}
+
+li {
+    margin-bottom: 5px;
 }
