@@ -1,6 +1,7 @@
 body {
     font-size: 16px;
     margin: 0;
+    background-color: rgb(255, 255, 240);
 }
 
 .container {
@@ -9,6 +10,11 @@ body {
     margin: 0 auto;
 }
 
+::selection {
+    color: rgb(255, 255, 240);
+    /* background: #17506e; */
+    background: #17616e;
+}
 @font-face {
     font-family: "myfont";
     src: url("https://ryota70th.github.io/rockwell-extra-bold.ttf") format("truetype");
@@ -26,7 +32,7 @@ header:not(.hidden) {
 
 header {
     background-color: #153A4C;
-    color: #fff;
+    color: #f3f3f3;
     height: 75px;
     width: 100%;
     position: fixed;
@@ -118,7 +124,7 @@ li span {
 
 footer {
     background-color: #404040;
-    color: #fff;
+    color: #f3f3f3;
     height: 50px;
     text-align: center;
 }
@@ -151,7 +157,8 @@ footer {
     width: 50px;
     height: 6px;
     margin: 10px 0;
-    background-color: white;
+    border-radius: 3px;
+    background-color: #f3f3f3;
     transition: 0.4s;
 }
 
@@ -181,8 +188,8 @@ footer {
 .menu {
     position: fixed;
     top: 0;
-    right: -300px; /* メニューを右からスライドインさせるための出る幅を調整 */
-    width: 300px; /* メニューの幅を設定 */
+    right: -400px; /* メニューを右からスライドインさせるための出る幅を調整 */
+    width: 400px; /* メニューの幅を設定 */
     height: 200vh; /* 画面の高さに合わせる */
     background-color: #f3f3f3;
     transition: 0.4s;
@@ -197,16 +204,16 @@ footer {
 /* メニュー内のリストのスタイル */
 .menu ul {
     list-style: none;
-    padding: 80px 20px;
+    padding: 80px 40px;
 }
 
 /* メニュー内リストのリンクのスタイル */
 .menu ul li a {
     text-decoration: none;
     color: #153A4C;
-    font-size: 18px;
+    font-size: 30px;
     display: block;
-    padding: 10px 0;
+    padding: 30px 0;
     transition: 0.2s;
 }
 
