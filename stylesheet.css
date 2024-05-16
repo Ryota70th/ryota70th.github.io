@@ -11,7 +11,7 @@ body {
 
 @font-face {
     font-family: "myfont";
-    src: url("./rockwell-extra-bold.ttf") format("truetype");
+    src: url("https://ryota70th.github.io/rockwell-extra-bold.ttf") format("truetype");
 }
 /* 初期状態は隠す */
 header.hidden {
