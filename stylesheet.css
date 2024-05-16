@@ -42,6 +42,11 @@ header {
     font-family: "myfont";
 }
 
+header a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
 .container {
     padding-top: 120px;
 }
@@ -219,5 +224,5 @@ footer {
 
 /* メニュー内リストのリンクのホバー時のスタイル */
 .menu ul li a:hover {
-    color: #bf7497;
+    color: #c85abb;
 }
