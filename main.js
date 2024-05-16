@@ -1,57 +1,67 @@
 const header = document.querySelector('header');
-let prevY = window.scrollY; 
+let prevY = window.scrollY;
+let shouldHideHeader = true;
 
 window.addEventListener('scroll', () => {
   const currentY = window.scrollY;
-  if (currentY < prevY) { 
-    header.classList.remove('hidden'); 
-  } else { 
-  if (currentY > 0) {
-      header.classList.add('hidden'); 
+  if (currentY < prevY) {
+    header.classList.remove('hidden');
+  } else {
+    if (currentY > 0 && shouldHideHeader) {
+      header.classList.add('hidden');
     }
   }
-  prevY = currentY; 
+  prevY = currentY;
 });
-
-// タイトル要素を取得
-const headerTitle = document.querySelector('.name');
-
-// タイトルを制御する関数
-function controlHeaderTitle() {
-    // 現在のウィンドウ幅を取得
-    const windowWidth = window.innerWidth;
-
-    // ウィンドウ幅がある閾値以下の場合は "Ryota" のみを表示
-    if (windowWidth <= 600) {
-        headerTitle.textContent = 'Ryota';
-    } else {
-        headerTitle.textContent = 'Ryota Kobayashi';
-    }
-}
-
-// 初期化とリサイズ時のイベントリスナーを設定
-window.addEventListener('DOMContentLoaded', controlHeaderTitle);
-window.addEventListener('resize', controlHeaderTitle);
 
 document.addEventListener('DOMContentLoaded', function () {
   const menuToggle = document.getElementById('menu-toggle');
   const menuLinks = document.querySelectorAll('.menu a');
+  const headerLink = document.querySelector('.name a');
+
+  function smoothScrollTo(targetId, hideHeader = true) {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      shouldHideHeader = hideHeader;
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+
+      if (hideHeader) {
+        setTimeout(() => {
+          header.classList.add('hidden');
+          shouldHideHeader = true; // Reset flag after hiding header
+        }, 1000); // Adjust the timeout to match the scroll duration
+      } else {
+        shouldHideHeader = true; // Reset flag immediately if not hiding header
+      }
+    }
+  }
 
   menuLinks.forEach(link => {
-      link.addEventListener('click', () => {
-          // メニューを閉じる
-          menuToggle.checked = false;
-          
-          // ヘッダーを非表示にする
-          const header = document.querySelector('header');
-          header.classList.add('hidden');
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      menuToggle.checked = false;
+      const targetId = link.getAttribute('href').substring(1);
+      smoothScrollTo(targetId);
+    });
+  });
 
-          // リンク先のセクションにスクロール
-          const targetId = link.getAttribute('href').substring(1);
-          const targetElement = document.getElementById(targetId);
-          if (targetElement) {
-              targetElement.scrollIntoView({ behavior: 'smooth' });
-          }
-      });
+  headerLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    shouldHideHeader = false; // Prevent header from hiding
+    document.querySelector('#home-body').scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+      shouldHideHeader = true; // Reset flag after scroll
+    }, 1000); // Adjust the timeout to match the scroll duration
+  });
+
+  // すべての内部リンクに対してスムーズスクロールを設定
+  const internalLinks = document.querySelectorAll('a[href^="#"]');
+
+  internalLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      smoothScrollTo(targetId);
+    });
   });
 });
