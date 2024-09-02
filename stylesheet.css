@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
     margin: 0;
-    background-color: rgb(255, 255, 240);
+    background-color: rgb(255, 255, 255);
 }
 
 .container {
@@ -11,7 +11,7 @@ body {
 }
 
 ::selection {
-    color: rgb(255, 255, 240);
+    color: rgb(255, 255, 255);
     /* background: #17506e; */
     background: #17616e;
 }
