@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+}
+
+.app {
+/* width: 100vw;
+height: 100vh; */
+display: flex;
+flex-direction: column;
+}
+
+.header {
+border: 4px solid blue;
+background-color: #153A4C;
+height: 75px;
+width: 100%;
+position: fixed;
+top: 0;
+z-index: 10;
+}
+
+
+.main {
+display: flex;
+flex-direction: row;
+flex-grow: 1;
+}
+
+@font-face {
+font-family: "myfont";
+src: url("https://ryota70th.github.io/rockwell-extra-bold.ttf") format("truetype");
+}
+
+.sidebar {
+width: 20%;
+background-color: #153A4C;
+box-sizing: border-box;
+border: 0px solid chocolate;
+height: calc( 100% - 30px );
+position: fixed;
+overflow: auto;
+z-index: 99;
+}
+
+.sidebar ul{
+list-style:none;
+padding:20px;
+}
+
+.sidebar li a{
+font-family: "myfont";
+font-size: 20px;
+line-height: 60px;
+color: white;
+text-decoration: none;
+}
+
+
+.content {
+position: absolute;
+left: 60%;
+transform: translateX(-50%);
+width: 78%;
+max-width: 1500px;
+padding-bottom:30px;
+/* border: 4px solid black; */
+}
+
+.flex-content {
+flex-grow: 1;
+background-color: white;
+box-sizing: border-box;
+/* border: 4px solid green; */
+}
+
+.footer {
+background-color: #404040;
+color: #f3f3f3;
+height: 30px;
+text-align: center;
+border: 0px solid rgb(13, 85, 77); 
+width: 100%;
+position: fixed;
+bottom: 0;
+z-index: 100;
+line-height: 30px;
+text-align: center;
+}
+
+.section-title {
+font-size: 42px;
+border-bottom: 5px solid #292929;
+/* width: 400px; */
+margin: 20px 0px;
+font-weight: bold;
+}
+
+::selection {
+color: rgb(255, 255, 240);
+/* background: #17506e; */
+background: #17616e;
+}
+
+h2{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+li {
+margin-bottom: 5px;
+}
+
+li span {
+color: red;
+font-weight: bold;
+}
+
+.content a{
+  color: rgb(0, 200, 100);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: rgb(0,100,50);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+.img-wrapper{
+display: flex;
+flex-direction: row;
+gap: 50px;
+margin-top: 50px;
+padding-left:auto;
+padding-right:auto;
+/* border: 4px solid green; */
+}
+
+/* div{
+border:4px solid green;
+} */
+
+.description {
+margin-top:auto;
+margin-bottom:auto;
+}
+
+.imagelist {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.click-icon {
+  /* color: #153A4C; */
+  margin-right: 10px;
+}
+
+.click-icon:hover {
+  filter: drop-shadow(0px 0px 5px rgba(160, 160, 160, 0.7));
+}
+
+.click-icon:active {
+  position: relative;
+  top: 1px;
+}
+
+.sidebar a:hover {
+  color: rgb(156,156,156);
+}
+
+.project_box{
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  /* border: solid 4px black; */
+  border-radius: 20px;
+  padding:20px;
+  background-color: #f3f3f3;
+  flex:1;
+  margin: 20px;
+  max-width:650px;
+  font-weight: bold;
+}
+
+.projects{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: -webkit-inline-flex; /* Safari */
+  display: inline-flex;
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content:         space-between;
+}
+.flex-container（親要素のクラス名） {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content:         space-between;
+}
+
+.video{
+  width: 640px;
+  height: 360px;
+  min-width: 500px;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.projects a{
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  color: rgb(100, 100, 100);
+  background-color: transparent;
+  text-decoration: none;
+}
