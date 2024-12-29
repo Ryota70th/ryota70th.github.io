@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ryota Kobayashi</title>
+    <meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/main.js" defer></script>
+    <link rel="icon" type="image/png" href="icon_fig/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon_fig/apple-touch-icon.png">
+    <link rel="android-chrome" sizes="192x192" href="icon_fig/android-chrome.png">
+    
+    <script type="text/javascript">
+      function ShowNowYear() {
+          var now = new Date();
+          var year = now.getFullYear();
+          document.write(year);
+      }
+    </script>
+    
+  </head>
+  <body>
+    <div class="app">
+      <!-- <div class="header">ヘッダー</div> -->
+      <div class="main">
+        <div class="sidebar">
+          <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "robots.html">Robots</a></li>
+            <li><a href = "publications.html">Publications</a></li>
+            <li><a href = "share.html">Share</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="flex-content">
+            <div class = "section-title", id = "robot videos">Robot videos</div>
+            <div class = "projects">
+
+              <div class = "project_box">
+                <iframe src="https://www.youtube.com/embed/BDgmuv6mrFY?si=krJ2mkthZchJJMz5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "video"></iframe>
+                <a href ="https://ieeexplore.ieee.org/document/9720228" target ="_blank">Soft Tensegrity Robot Driven by Thin Artificial Muscles for the Exploration of Unknown Spatial Configurations</a>
+              </div>
+              <div class = "project_box">
+                <iframe src="https://www.youtube.com/embed/PGnjrItO8Oo?si=PdLCyYA5R2prsAtB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "video"></iframe>
+                <a href ="https://ieeexplore.ieee.org/document/10016717" target ="_blank">Large Torsion Thin Artificial Muscles Tensegrity Structure for Twist Manipulation</a>
+              </div>
+              <div class = "project_box">
+                <iframe src="https://www.youtube.com/embed/opXVRUJGCjU?si=r-Hi8ApWGK0wy-Io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "video"></iframe>
+                <a href ="https://ieeexplore.ieee.org/document/10251669" target ="_blank">Active-Bending Six-Bar Tensegrity Modular Robot Driven by Thin Artificial Muscles</a>
+              </div>
+              <div class = "project_box">
+                <iframe src="durable_muscle.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "video"></iframe>
+                <a href ="https://ieeexplore.ieee.org/document/10669185" target ="_blank">Enhancement of Thin McKibben Muscle Durability Under Repetitive Actuation in a Bent State</a>
+              </div>
+              <div class = "project_box">
+                <iframe src="https://www.youtube.com/embed/OkJ-nEWFEcI?si=xcfqDNMRLYsj3m2_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "video"></iframe>
+                <a href ="" target ="_blank">McKibben Muscle with Elastic Thread Embedded in Parallel Extending Range of Motion of Muscle-Driven Robots</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+          &copy<script type="text/javascript">ShowNowYear();</script> Ryota Kobayashi
+      </div>
+    </div>
+  </body>
+</html>
