@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ryota Kobayashi</title>
+    <meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/main.js" defer></script>
+
+    <link rel="icon" type="image/png" href="icon_fig/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon_fig/apple-touch-icon.png">
+    <link rel="android-chrome" sizes="192x192" href="icon_fig/android-chrome.png">
+    
+    <script type="text/javascript">
+      function ShowNowYear() {
+          var now = new Date();
+          var year = now.getFullYear();
+          document.write(year);
+      }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer type="text/javascript"></script>    
+  </head>
+  <body>
+    <div class="app">
+      <!-- <div class="header">ヘッダー</div> -->
+      <div class="main">
+        <div class="sidebar">
+          <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "robots.html">Robots</a></li>
+            <li><a href = "publications.html">Publications</a></li>
+            <li><a href = "share.html">Share</a>
+            <ul>
+              <li><a href = "pneumatic_fitting.html">Pneumatic fitting</a></li>
+              <li><a href = "stretchable_muscle.html">Stretchable muscle</a></li>
+            </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+            <div class = "section-title">Pneumatic fitting</div>
+            <div class = "flex-content">
+                私の研究では0.5 MPa程度の空圧をよく用いており，PISCOの<a href = "https://www.monotaro.com/g/00174806/" target="_blank">ポリウレタンチューブ</a>（主に外径4 mm，外径3 mm）を使用しています．これは空気を送るためのチューブで様々な径のものを購入可能です．空気圧を用いたシステムではこの空圧チューブを接続するために<a href = "https://www.pisco.co.jp/product/a/" target="_blank">空圧継ぎ手</a>というものが必要となります．異なったサイズの空圧チューブを接続するために用いたり，1本の空圧チューブを複数の空圧チューブに分岐させたりする際に使うものです．空圧継ぎ手もPISCOなどで購入することが可能です．しかし，空圧継ぎ手は意外と高価であったり重かったり，求めているタイプのものがなかったりと，自作したいと思うことがよくありました．ここでは空圧継ぎ手の作り方に関する情報を共有します．<br>
+                <h2>接着剤</h2>
+                まず，空圧継ぎ手において重要なのは空気の漏れを防ぐことです．空気の漏れを防ぐためには，oリングやゴム板などを挟む，シールテープを使う，接着剤を用いるなどの方法があります．自作の継ぎ手においては接着剤が非常に有効です．接着剤にはドイツの会社であるHENKELが出している<a href="https://www.monotaro.com/g/00012745/?srsltid=AfmBOoo3FdkrwQ9z4i43hQmtJnLP0WU9ijMKlfr0ieig4c9W2q5YMzFs" target="_blank">LOCTITE 401</a>を主に使用しています．研究室に所属する前までは聞いたこともありませんでしたが，私が知っている中では間違いなく一番優れた接着剤です．20 gで2,000円程度と少し値段が高いですが，ほとんどのものを接着可能なので自腹でも買いたいほどです．<br>
+                <h2>空圧チューブ同士の接続</h2>
+                空圧継ぎ手の自作について紹介する前に，接着剤を使わなくてもチューブ同士を接続することのできる方法を紹介します．PISCOの外径4 mm，内径2.5 mmのチューブの中に外径3 mm，内径2 mmの空圧チューブをむりやりはめ込むことで，ポリウレタンチューブの弾性により，接着剤なしでも十分に継ぎ手として機能します．2 mm程度差し込んでおくことで0.7 MPa程度をかけても外れることはありません．手で引っ張ると外せるため，使い勝手が良いです．他の径のチューブの組み合わせもあった気がします．<br>
+                <ul class = "imagelist">
+                    <li><a href="IMG_share/tube3mm4mm.jpg" data-lightbox="group"><img src="IMG_share/tube3mm4mm.jpg" alt="" width="450"></a></li>
+                </ul>
+                <h2>二股の空圧チューブ</h2>
+                二股の継ぎ手が欲しいという場合には空圧チューブのみから製作することも可能です．外径4 mmの空圧チューブに直径4 mmの円よりも小さめの穴を開けます．私は切れ味の良いKNIPEXのスーパーニッパーを用いていますが，穴が開けばなんでも大丈夫です．そこに別の外径4 mmの空圧チューブを無理やり差し込みます．この際，チューブの弾性によってある程度固定されて少し振っても抜けないくらいになっていることが重要です．この2つのチューブの間にLOCTITEをたらすことで，二股の空圧チューブが簡単にできてしまいます．もちろん，面同士の接着ではないため強い力で引っ張ってしまうと抜けてしまいますが，0.7 MPa程度の空気圧によって抜けることはありません．穴のサイズを変更することで別のサイズの空圧チューブを用いることもできます．<br>
+                <ul class = "imagelist">
+                    <!-- <li><img src="tubeT_1.jpg" width="450px" alt=""></li> -->
+                    <li><a href="IMG_share/tubeT_1.jpg" data-lightbox="group"><img src="IMG_share/tubeT_1.jpg" alt="" width="450"></a></li>
+                    <li>　</li>
+                    <!-- <li><img src="tubeT_2.jpg" width="450px" alt=""></li> -->
+                    <li><a href="IMG_share/tubeT_2.jpg" data-lightbox="group"><img src="IMG_share/tubeT_2.jpg" alt="" width="450"></a></li>
+                </ul>
+                <h2>空圧プラグ</h2>
+                研究において試行錯誤する際には空気の流れを封じたい場合がよくあります．このとき，市販のプラグを用いてもよいのですが，手元にない場合には自作も可能です．空圧チューブの中に同じくらいのサイズの導線（他の物でも可）を挿入します．先端をLOCTITEにつけて30分も待てばプラグが完成します．シリコーンゴムの上にLOCTITEをたらしておき，チューブの先端をつける程度で十分です．また，この方法と二股の空圧チューブの自作法を組み合わせることで直角に曲がった空圧チューブを自作することも可能です．通常，空圧チューブを直角に曲げてしまうと空気が通らなくなってしまうため，直角に曲がったチューブが欲しい場合には有効です．逆に，空圧チューブを折り曲げることで簡単に空気の流れを防ぐことができるため（外径4 mm，3 mmのチューブであれば可能であることを確認済み），一時的に空気を流したくない場合にはこの方法が有効です．<br>
+                <ul class = "imagelist">
+                    <!-- <li><img src="terminater_1.jpg" width="450px" alt=""></li> -->
+                    <li><a href="IMG_share/terminater_1.jpg" data-lightbox="group"><img src="IMG_share/terminater_1.jpg" alt="" width="450"></a></li>
+                    <li>　</li>
+                    <!-- <li><img src="terminater_2.jpg" width="450px" alt=""></li> -->
+                    <li><a href="IMG_share/terminater_2.jpg" data-lightbox="group"><img src="IMG_share/terminater_2.jpg" alt="" width="450"></a></li>
+                    <li>　</li>
+                    <!-- <li><img src="terminater_3.jpg" width="450px" alt=""></li> -->
+                    <li><a href="IMG_share/terminater_3.jpg" data-lightbox="group"><img src="IMG_share/terminater_3.jpg" alt="" width="450"></a></li>
+                </ul>
+                <h2>3Dプリンタを用いた継ぎ手の製作</h2>
+                そして最後に，3Dプリンタを用いた継ぎ手の製作です．複雑な継ぎ手でも軽く作ることができます．また，上に記したチューブ同士の接続に対して，強く引っ張っても抜けない丈夫な継ぎ手を製作可能です．外径4 mmのチューブを挿入するためには図のような穴を作ります．内径4.5 mmの穴は接着剤を入れるためのものです．そして，内径4 mmの穴はチューブを掴むためのもので，接着剤をつけやすくなります．<br>
+                <ul class = "imagelist">
+                    <!-- <li><img src="fitting1.jpg" width="600px" alt=""></li> -->
+                    <li><a href="IMG_share/fitting1.jpg" data-lightbox="group"><img src="IMG_share/fitting1.jpg" alt="" width="600"></a></li>
+                    <li>　</li>
+                    <!-- <li><img src="fitting2.jpg" width="600px" alt=""></li> -->
+                    <li><a href="IMG_share/fitting2.jpg" data-lightbox="group"><img src="IMG_share/fitting2.jpg" alt="" width="600"></a></li>
+                </ul>
+                3DプリンタにはMarkforgedのMark twoやUltimakerのS5などを用いていますが，他の3Dプリンタでも代用可能であると思います．ただし，フィラメントの素材によってはスカスカな構造のために壁面から空気が漏れてしまうことがあるため，フィラメントの素材には注意する必要があります．Mark twoではonyx，S5では強化PLAを用いています．
+                <br>
+                同様にして反対側に外径1.8 mmのチューブを6本取り付けることで1本の外径4 mmのチューブから6本の外径1.8 mmのチューブに分岐させる継ぎ手を製作することが可能です．外径1.8 mmのチューブの先端は外径3 mm，内径2 mmのチューブと接着剤でつなげています．<br>
+                <ul class = "imagelist">
+                    <!-- <li><img src="fitting3.jpg" width="450px" alt=""></li> -->
+                    <li><a href="IMG_share/fitting3.jpg" data-lightbox="group"><img src="IMG_share/fitting3.jpg" alt="" width="450"></a></li>
+                </ul>
+                <h2>電磁バルブでの自作継ぎ手</h2>
+                SMCの<a href = "https://jp.misumi-ec.com/vona2/detail/221300030427/?ProductCode=SY113-5L-M3" target="_blank">電磁バルブ（SY113-5L-M3）</a>は1つ15 g以下であり，電磁バルブをロボットに搭載したいときには便利です．しかし市販の状態では，電磁バルブに空気を送るためのマニホールドがアルミでできているためにそこそこ重たいです．そこで，下の写真のような3Dプリンタ製の継ぎ手を製作しました．これにより，3ポートのソレノイドバルブをたった15 g程度で用いることが可能になりました．stlファイルは<a href = "share_files/SY113-5L-M3_fitting.stl" download>こちら</a>からダウンロード可能です．ただし，このような小型のソレノイドバルブでは流量が絞られるため，大流量を使いたい場合にはコガネイの出している200E1 DC24V等を用いています（SY113-5L-M3は<a href = "https://youtu.be/OkJ-nEWFEcI?si=2FSWGSnlFfDC4uiV" target = "_blank">こちらの動画</a>で用いているもので，時間応答が遅すぎるということはありません）．<br>
+                <ul class = "imagelist">
+                    <!-- <li><img src="valve_fitting.jpg" width="450px" alt=""></li> -->
+                    <li><a href="IMG_share/valve_fitting.jpg" data-lightbox="group"><img src="IMG_share/valve_fitting.jpg" alt="" width="450"></a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <div class="footer">
+          &copy<script type="text/javascript">ShowNowYear();</script> Ryota Kobayashi
+      </div>
+    </div>
+  </body>
+</html>

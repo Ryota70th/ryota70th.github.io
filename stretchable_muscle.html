@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ryota Kobayashi</title>
+    <meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/main.js" defer></script>
+
+    <link rel="icon" type="image/png" href="icon_fig/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon_fig/apple-touch-icon.png">
+    <link rel="android-chrome" sizes="192x192" href="icon_fig/android-chrome.png">
+    
+    <script type="text/javascript">
+      function ShowNowYear() {
+          var now = new Date();
+          var year = now.getFullYear();
+          document.write(year);
+      }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer type="text/javascript"></script>    
+  </head>
+  <body>
+    <div class="app">
+      <!-- <div class="header">ヘッダー</div> -->
+      <div class="main">
+        <div class="sidebar">
+          <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "robots.html">Robots</a></li>
+            <li><a href = "publications.html">Publications</a></li>
+            <li><a href = "share.html">Share</a>
+            <ul>
+              <li><a href = "pneumatic_fitting.html">Pneumatic fitting</a></li>
+              <li><a href = "stretchable_muscle.html">Stretchable muscle</a></li>
+            </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+            <div class = "section-title">Stretchable muscle</div>
+            <div class = "flex-content">
+              受動的な伸長が可能なマッキベン型人工筋についてです．詳しいデータなどについては<a href ="https://dx.doi.org/10.1109/LRA.2025.3528662" target ="_blank">こちら</a>．
+              <div class = "video_box">
+                <iframe src="videos/stretchable_muscle.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "video"></iframe>
+              </div>
+              この研究では下のgifに示すようにオレンジ色の弾性紐と黒色の伸びない紐により伸長可能な人工筋を実現しています．イメージとしては通常は人工筋と紐が接触せず，普通のゴム紐のように振る舞い，人工筋を駆動させる場合のみ人工筋とゴム紐が一体化し，収縮するような感じです．
+              <div class = "gifs">
+                <div class = "gif_box">
+                  受動的伸長
+                  <img src="videos/image14.gif" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "gif_video"></iframe>
+                </div>
+                <div class = "gif_box">
+                  能動的収縮
+                  <img src="videos/image17.gif" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "gif_video"></iframe>
+                </div>
+              </div>
+              実際には，人工筋のゴムチューブとスリーブの間にゴム紐と伸びない紐を直列に接続した紐を入れています．空圧を印加することで繊維ジャミングのように糸がロックされ，その後，収縮します．
+              <div class = "gifs">
+                <div class = "gif_box">
+                  受動的伸長
+                  <img src="videos/image22.gif" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "gif_video"></iframe>
+                </div>
+                <div class = "gif_box">
+                  能動的収縮
+                  <img src="videos/image21.gif" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "gif_video"></iframe>
+                </div>
+              </div>
+              
+
+              この人工筋の作り方の動画です．阪大の増田先生の<a href = "https://ishikawa-lab.sakura.ne.jp/yoichi/muscle_recipe" target = "_blank">マッキベン型人工筋のレシピ</a>をもとにしていますので，材料等の詳細はそちらにある通りです．追加で<a href = "https://www.monotaro.com/p/5835/1703/" target = "_blank">ゴム紐</a>と<a href = "https://www.monotaro.com/p/0671/2755/" target = "_blank">普通のひも</a>，<a href="https://www.monotaro.com/g/00012745/?srsltid=AfmBOoo3FdkrwQ9z4i43hQmtJnLP0WU9ijMKlfr0ieig4c9W2q5YMzFs" target="_blank">LOCTITE 401</a>を用いています．
+              <div class = "video_box">
+                <iframe src="videos/stretchable_muscle_fabrication.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class = "video"></iframe>
+              </div>
+
+            </div>
+        </div>
+      </div>
+      <div class="footer">
+          &copy<script type="text/javascript">ShowNowYear();</script> Ryota Kobayashi
+      </div>
+    </div>
+  </body>
+</html>
