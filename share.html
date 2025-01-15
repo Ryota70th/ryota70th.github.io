@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ryota Kobayashi</title>
+    <meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/main.js" defer></script>
+
+    <link rel="icon" type="image/png" href="icon_fig/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon_fig/apple-touch-icon.png">
+    <link rel="android-chrome" sizes="192x192" href="icon_fig/android-chrome.png">
+    
+    <script type="text/javascript">
+      function ShowNowYear() {
+          var now = new Date();
+          var year = now.getFullYear();
+          document.write(year);
+      }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer type="text/javascript"></script>    
+  </head>
+  <body>
+    <div class="app">
+      <!-- <div class="header">ヘッダー</div> -->
+      <div class="main">
+        <div class="sidebar">
+          <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "robots.html">Robots</a></li>
+            <li><a href = "publications.html">Publications</a></li>
+            <li><a href = "share.html">Share</a>
+            <ul>
+              <li><a href = "pneumatic_fitting.html">Pneumatic fitting</a></li>
+              <li><a href = "stretchable_muscle.html">Stretchable muscle</a></li>
+            </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+            <div class = "section-title">Share</div>
+            <div class = "flex-content">
+                研究を進めていくうえで培ってきたちょっとした技術，情報をここに残しておこうと思います．誰かの参考になれば嬉しいです．<br><br>
+                <ul>
+                  <li><a href = "pneumatic_fitting.html">Pneumatic fitting</a></li>
+                  <li><a href = "stretchable_muscle.html">Stretchable muscle</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <div class="footer">
+          &copy<script type="text/javascript">ShowNowYear();</script> Ryota Kobayashi
+      </div>
+    </div>
+  </body>
+</html>
