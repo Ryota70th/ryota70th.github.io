@@ -45,8 +45,10 @@ z-index: 99;
 
 .sidebar ul{
 list-style:none;
-padding:20px;
-}
+padding-left:20px;
+} 
+
+
 
 .sidebar li a{
 font-family: "myfont";
@@ -56,6 +58,12 @@ color: white;
 text-decoration: none;
 }
 
+.sidebar ul ul a{
+  list-style:circle;
+  /* padding:20px; */
+  font-size:16px;
+  line-height: 40px;
+} 
 
 .content {
 position: absolute;
@@ -132,6 +140,7 @@ font-weight: bold;
 .img-wrapper{
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 gap: 50px;
 margin-top: 50px;
 padding-left:auto;
@@ -153,7 +162,7 @@ margin-bottom:auto;
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .click-icon {
@@ -173,6 +182,56 @@ margin-bottom:auto;
 .sidebar a:hover {
   color: rgb(156,156,156);
 }
+
+.video_box{
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding:20px;
+  background-color: #f3f3f3;
+  flex:1;
+  margin: 20px;
+  max-width:650px;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: auto;
+  padding-left: auto;
+}
+
+.gif_video{
+  /* margin: 20px; */
+  /* padding: 20px; */
+  margin-top:-100px;
+  margin-bottom:-50px;
+  /* border-color:black;
+  border: solid 4px black; */
+}
+
+.gifs{
+  margin-top:20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.gif_box{
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  /* margin-bottom:-50px; */
+  /* background-color: #f3f3f3; */
+  flex:1;
+  /* margin: 20px; */
+  max-width:650px;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: auto;
+  padding-left: auto;
+}
+
 
 .project_box{
   font-size: 30px;
